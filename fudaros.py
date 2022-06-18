@@ -49,6 +49,9 @@ def parse_arguments():
     parser.add_argument('--skip', default=False, action='store_true',
         help='Do skip tasks. / Read from skippe.md and reflect tasks to timeline.md')
 
+    parser.add_argument('--skip-dryrun', default=False, action='store_true',
+        help='Dryrun of --skip. / not to timeline.md, but to timeline_dryrun.md')
+
     parser.add_argument('--start', default=False, action='store_true',
         help='Start a day. / Read from timeline.md and reflect today tasks to today.md ')
 
